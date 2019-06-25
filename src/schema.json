@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "index": { "type": "number" },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" }
+      },
+      "required": ["title", "description"]
+    },
+    "call": {},
+    "restore": {}
+  },
+  "required": ["index", "meta", "call"]
+}
