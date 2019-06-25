@@ -39,7 +39,7 @@ const scenario = [
             const isCustomerInDb = isIdInDB(db,id);
             
             if(isCustomerInDb) {
-                //Uncomment the next line to play scenario with failed restore the step
+                //Uncomment the next line to play scenario with failed restore on the step
                 //throw new Error('Server error: we can not delete the user :(')
                 delete db[id];
                 console.log('restoring STEP 2 completed!', db);
@@ -63,7 +63,7 @@ const scenario = [
                 password: '54321',
            };
            console.log('STEP 3, credentials after adding: ', Object.values(credentials));
-           //Uncomment the next line to play scenario with restore data the step
+           //Uncomment the next line to play scenario with restore data on the step
            //throw new Error('Add customer credentials failed!');
         },
         restore: async (store) => {
@@ -73,7 +73,7 @@ const scenario = [
             const isCustomerInDb = isIdInDB(credentials, id);
             
             if(isCustomerInDb) {
-                //Uncomment the next line to play scenario with failed restore the step
+                //Uncomment the next line to play scenario with failed restore on the step
                 //throw new Error('Server error: we can not delete user data :(')
                 delete credentials[id];
                 console.log('restoring STEP 3 completed!', credentials);

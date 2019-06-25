@@ -1,8 +1,8 @@
 const Ajv = require('ajv');
 const ajv = new Ajv({allErrors: true});
 
-const { scenario } = require('./scenario');
-const { delay, isValidate } = require('./helpers');
+const { scenario } = require('./src/scenario');
+const { delay, isValidate } = require('./src/helpers');
 
 class Transaction {
     constructor(){
